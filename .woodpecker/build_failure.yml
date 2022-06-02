@@ -1,0 +1,9 @@
+pipeline:
+  build_failure:
+    image: debian:stable-slim
+    commands:
+      - echo building
+      - echo failing
+      - exit 1
+
+skip_clone: true

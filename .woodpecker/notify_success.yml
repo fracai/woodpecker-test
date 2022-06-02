@@ -1,0 +1,12 @@
+pipeline:
+  notify_success:
+    image: debian:stable-slim
+    commands:
+      - echo notifying success
+
+depends_on:
+  - build_success
+
+run_on: [ success ]
+
+skip_clone: true
