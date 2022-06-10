@@ -7,6 +7,6 @@ pipeline:
 depends_on:
   - build_success
 
-run_on: [ failure ]
+runs_on: [ failure ]
 
 skip_clone: true
