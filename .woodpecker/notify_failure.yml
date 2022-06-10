@@ -5,7 +5,7 @@ pipeline:
       - echo notifying failure
 
 depends_on:
-  - build_success
+  - build_failure
 
 runs_on: [ failure ]
 
